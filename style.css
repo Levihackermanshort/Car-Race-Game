@@ -16,25 +16,27 @@ body {
 .road {
     background-color: black;
     height: 93vh;
-    width: 400px;
+    width: 800px; /* Increased width */
     margin: auto;
     position: relative;
-    border-left: 5px white dashed;
-    border-right: 5px white dashed;
+    border-left: 10px white dashed;
+    border-right: 10px white dashed;
 }
+
 
 .lines {
     background-color: white;
     height: 100px;
     width: 10px;
     position: absolute;
-    margin-left: 195px;
+    margin-left: 395px; /* Repositioned for the new width */
 }
 
 .car {
     height: 75px;
     width: 50px;
     position: absolute;
+    left: 375px; /* Adjusted for the wider road */
     background-image: url("car.png"); /* Updated path */
     background-size: cover;
 }
