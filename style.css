@@ -1,109 +1,73 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    overflow: hidden;
-    background: linear-gradient(to right, #0047ab, #87ceeb); /* Sky blue gradient */
+  overflow: hidden;
+  background: linear-gradient(to right, #0047ab, #87ceeb); /* Sky blue gradient */
 }
 
 .container {
-    background-size: cover;
-    min-height: 99%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .road {
-    background-color: black;
-    height: 93vh;
-    width: 800px; /* Increased width */
-    margin: auto;
-    position: relative;
-    border-left: 10px white dashed;
-    border-right: 10px white dashed;
-}
-
-.lines {
-    background-color: white;
-    height: 100px;
-    width: 10px;
-    position: absolute;
-    margin-left: 395px; /* Repositioned for the new width */
-}
-
-.car {
-    height: 75px;
-    width: 50px;
-    position: absolute;
-    left: 375px; /* Adjusted for the wider road */
-    background-image: url("car.png"); /* Updated path */
-    background-size: cover;
-}
-
-.enemies {
-    height: 75px;
-    width: 50px;
-    position: absolute;
-    background-image: url("enemycar.png"); /* Updated path */
-    background-size: cover;
-}
-
-.obstacles {
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    background-color: gray;
-    border-radius: 10%;
-}
-
-.power-up {
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    background-color: yellow;
-    border-radius: 50%;
-}
-
-.health-bar {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 16px;
-    color: red;
-}
-
-.timer-display {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 16px;
-    color: white;
+  background-color: black;
+  height: 93vh;
+  width: 400px;
+  position: relative;
+  border-left: 5px white dashed;
+  border-right: 5px white dashed;
 }
 
 .side-panel {
-    width: 200px;
-    height: 93vh;
-    position: absolute;
-    background: green; /* Grass color */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  height: 93vh;
+  background: green; /* Grass or decoration */
+  position: absolute;
 }
 
-.left {
-    left: 0;
+.side-panel.left {
+  left: 0;
 }
 
-.right {
-    right: 0;
+.side-panel.right {
+  right: 0;
+}
+
+.car {
+  height: 75px;
+  width: 50px;
+  position: absolute;
+  background-image: url("car.png");
+  background-size: cover;
+}
+
+.enemies {
+  height: 75px;
+  width: 50px;
+  position: absolute;
+  background-image: url("enemycar.png");
+  background-size: cover;
+}
+
+.push {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ff1a1a;
 }
