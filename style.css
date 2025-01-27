@@ -35,7 +35,7 @@ body {
     height: 75px;
     width: 50px;
     position: absolute;
-    background-image: url("assets/car.png");
+    background-image: url("car.png"); /* Updated path */
     background-size: cover;
 }
 
@@ -43,7 +43,7 @@ body {
     height: 75px;
     width: 50px;
     position: absolute;
-    background-image: url("assets/enemycar.png");
+    background-image: url("enemycar.png"); /* Updated path */
     background-size: cover;
 }
 
