@@ -6,6 +6,7 @@
 
 body {
     overflow: hidden;
+    background: linear-gradient(to right, #0047ab, #87ceeb); /* Sky blue gradient */
 }
 
 .container {
@@ -79,4 +80,18 @@ body {
     right: 10px;
     font-size: 16px;
     color: white;
+}
+.side-panel {
+    width: 200px;
+    height: 93vh;
+    position: absolute;
+    background: green; /* Grass color */
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
 }
